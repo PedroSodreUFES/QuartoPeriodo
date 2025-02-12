@@ -482,11 +482,13 @@ public class Eleicao {
                     System.out.print("voto) / ");
                 }
 
+                int tamanho = c.getPartido().getCandidatos().size() - 1;
+
                 // dados do ultimo
-                System.out.print(c.getPartido().getCandidatos().getLast().getNome() + " ("
-                        + c.getPartido().getCandidatos().getLast().getNumero() + ", ");
-                System.out.print(String.format("%,d", c.getPartido().getCandidatos().getLast().getVotos()) + " ");
-                if (c.getPartido().getCandidatos().getLast().getVotos() > 1) {
+                System.out.print(c.getPartido().getCandidatos().get(tamanho).getNome() + " ("
+                        + c.getPartido().getCandidatos().get(tamanho).getNumero() + ", ");
+                System.out.print(String.format("%,d", c.getPartido().getCandidatos().get(tamanho).getVotos()) + " ");
+                if (c.getPartido().getCandidatos().get(tamanho).getVotos() > 1) {
                     System.out.print("votos)");
                 } else {
                     System.out.print("voto)");
