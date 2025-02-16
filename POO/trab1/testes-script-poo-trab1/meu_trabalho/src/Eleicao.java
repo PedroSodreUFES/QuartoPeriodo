@@ -1,3 +1,5 @@
+//package src;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -562,7 +564,7 @@ public class Eleicao {
         System.out.println("Total de votos nominais:   " + String.format("%,d", votos - votos_legenda) + " (" + String.format("%.2f", ((votos - votos_legenda) / (float) votos) * 100).replace(".", ",") + "%)");
         System.out.println("Total de votos de legenda: " + String.format("%,d", votos_legenda) + " (" + String.format("%.2f", (votos_legenda / (float) votos) * 100).replace(".", ",") + "%)");
         System.out.print("\n");
-        System.out.print("\n");
+        //System.out.print("\n");
     }
 
 }

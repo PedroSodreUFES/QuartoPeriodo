@@ -1,3 +1,5 @@
+//package src;
+
 public class Candidato {
     private String numero, nome, genero; 
     private int votos, federacao, eleito, dia, mes, ano;
